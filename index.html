@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ámbitos S.L. — Venta de Productos Electrónicos en Valencia</title>
+  <meta name="description" content="Ámbitos S.L. — Venta de productos electrónicos, reparación de equipos informáticos y montaje de redes en el área metropolitana de Valencia. Más de 30 años de experiencia. Tel: 609 659 015">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="canonical" href="https://ambitos.es/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ámbitos S.L. — Productos Electrónicos en Valencia desde 1995">
+  <meta property="og:description" content="Venta de ordenadores, componentes, periféricos y dispositivos de red con asesoramiento experto. Más de 30 años en el área metropolitana de Valencia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitos.es/">
+  <meta property="og:image" content="https://ambitos.es/assets/hero-poster.png">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Datos geográficos (SEO local) -->
+  <meta name="geo.region" content="ES-VC">
+  <meta name="geo.placename" content="Valencia">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ámbitos S.L.",
+    "description": "Empresa valenciana especializada en la venta de productos electrónicos y soluciones tecnológicas con más de 30 años de experiencia.",
+    "telephone": "+34609659015",
+    "email": "ambitos@outlook.com",
+    "foundingDate": "1995",
+    "url": "https://ambitos.es/",
+    "areaServed": { "@type": "City", "name": "Valencia" },
+    "slogan": "Tu tecnología de confianza desde 1995"
+  }
+  </script>
+
+  <!-- Lenis CSS resets -->
+  <style>
+    html.lenis, html.lenis body { height: auto; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+    .lenis.lenis-stopped { overflow: hidden; }
+  </style>
+
+  <style>
+    /* ========== RESET & VARIABLES ========== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-bg: #0A0A0A;
+      --color-bg-alt: #111111;
+      --color-surface: #1A1A1A;
+      --color-surface-light: #222222;
+      --color-border: rgba(255,255,255,0.08);
+      --color-border-light: rgba(255,255,255,0.12);
+      --color-text: #F0F0F0;
+      --color-text-muted: rgba(240,240,240,0.5);
+      --color-accent: #FFFFFF;
+      --header-bg-rgb: 10,10,10;
+      --font-main: 'Space Grotesk', sans-serif;
+      --radius: 12px;
+      --radius-lg: 16px;
+      /* Laptop screen center — adjusted to new hero image */
+      --zoom-x: 50%;
+      --zoom-y: 42%;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    ul { list-style: none; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ========== HEADER — HIDDEN BY DEFAULT ========== */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 18px 0;
+      background: rgba(var(--header-bg-rgb), 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-border);
+      transition: padding 0.4s ease;
+      /* Start hidden — GSAP will reveal after zoom */
+      opacity: 0;
+      transform: translateY(-100%);
+      pointer-events: none;
+    }
+    .site-header.scrolled {
+      padding: 12px 0;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-logo img {
+      height: 32px;
+      width: auto;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .header-nav a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.7);
+      transition: color 0.3s ease;
+      letter-spacing: 0.02em;
+    }
+    .header-nav a:hover,
+    .header-nav a.active {
+      color: var(--color-text);
+    }
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text);
+      transition: opacity 0.3s ease;
+    }
+    .header-phone:hover { opacity: 0.8; }
+    .header-phone svg {
+      width: 16px; height: 16px;
+      fill: none; stroke: currentColor; stroke-width: 2;
+    }
+
+    /* Mobile menu */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .menu-toggle span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--color-text);
+      margin: 5px 0;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+    }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* ========== HERO — FULL SCREEN ========== */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--color-bg);
+    }
+
+    .hero-img-wrapper {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform-origin: var(--zoom-x) var(--zoom-y);
+      will-change: transform;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: var(--color-bg);
+      opacity: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .hero-scroll-prompt {
+      font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .scroll-arrow {
+      margin-top: 16px;
+    }
+    .scroll-arrow svg {
+      width: 22px; height: 22px;
+      stroke: rgba(255,255,255,0.5);
+      fill: none; stroke-width: 2;
+      animation: bounceDown 2s infinite;
+    }
+    @keyframes bounceDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* Loading spinner */
+    .hero-spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .spinner-ring {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255,255,255,0.15);
+      border-top-color: rgba(255,255,255,0.8);
+      border-radius: 50%;
+      animation: spinRing 0.8s linear infinite;
+    }
+    @keyframes spinRing {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ========== SECTIONS COMMON ========== */
+    section { padding: 100px 0; }
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    /* ========== PRODUCTOS (inside hero, revealed at end of zoom) ========== */
+    .hero-products {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 72px 24px 24px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .hero-products.is-visible {
+      pointer-events: auto;
+    }
+    .hero-products .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Section header with animated line */
+    .products-header {
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .products-header .section-title {
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .products-header .section-subtitle {
+      margin-bottom: 0;
+    }
+    /* Animated horizontal accent line */
+    .products-header::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.4), transparent);
+      margin-top: 20px;
+      transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero-products.is-visible .products-header::after {
+      width: 100%;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      perspective: 1200px;
+    }
+    .product-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      /* Animated gradient border */
+      border: 1px solid transparent;
+      background-clip: padding-box;
+      transform-style: preserve-3d;
+      transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease;
+    }
+    /* Gradient border via outline trick */
+    .product-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius-lg);
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      transition: background 0.5s ease;
+    }
+    /* Scan line effect */
+    .product-card::after {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 200%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 45%,
+        rgba(255,255,255,0.03) 48%,
+        rgba(255,255,255,0.06) 50%,
+        rgba(255,255,255,0.03) 52%,
+        transparent 55%,
+        transparent 100%
+      );
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .product-card:hover::after {
+      opacity: 1;
+      animation: scanLine 1.5s ease-in-out infinite;
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(-25%); }
+      100% { transform: translateY(25%); }
+    }
+    .product-card:hover::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05), rgba(255,255,255,0.15));
+    }
+    .product-card:hover {
+      transform: translateY(-6px) rotateX(2deg);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 40px rgba(255,255,255,0.03);
+    }
+
+    .product-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .product-icon svg {
+      width: 22px; height: 22px;
+      stroke: var(--color-text); fill: none; stroke-width: 1.5;
+      /* Stroke draw-on animation */
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      transition: stroke-dashoffset 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+    .hero-products.is-visible .product-icon svg {
+      stroke-dashoffset: 0;
+    }
+    /* Icon glow on card hover */
+    .product-card:hover .product-icon {
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+    }
+
+    .product-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .product-card p {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    /* Corner accent on cards */
+    .product-card .corner-accent {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .product-card .corner-accent::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .product-card:hover .corner-accent::before {
+      opacity: 1;
+    }
+
+    /* Card number tag */
+    .product-card .card-num {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.08);
+      letter-spacing: 0.1em;
+      font-variant-numeric: tabular-nums;
+      transition: color 0.4s ease;
+    }
+    .product-card:hover .card-num {
+      color: rgba(255,255,255,0.15);
+    }
+
+    /* ========== SCROLL LOCKED STATE ========== */
+    body.scroll-locked {
+      overflow: hidden;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      .header-nav,
+      .header-phone { display: none; }
+      .menu-toggle { display: block; }
+
+      .header-nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: rgba(var(--header-bg-rgb), 0.98);
+        backdrop-filter: blur(16px);
+        padding: 24px;
+        gap: 16px;
+        border-bottom: 1px solid var(--color-border);
+      }
+      .header-phone.open {
+        display: flex;
+        position: absolute;
+        top: calc(100% + 140px);
+        left: 24px;
+      }
+
+      .products-grid { grid-template-columns: 1fr; gap: 12px; }
+      .hero-products { padding: 64px 16px 16px; }
+      .products-header { margin-bottom: 16px; }
+      .product-card { padding: 20px 18px; }
+      .product-icon { width: 36px; height: 36px; margin-bottom: 10px; }
+      .product-icon svg { width: 18px; height: 18px; }
+      .product-card h3 { font-size: 0.95rem; margin-bottom: 4px; }
+      .product-card p { font-size: 0.78rem; }
+
+    }
+
+    /* ========== REDUCED MOTION ========== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER (hidden until zoom completes) ========== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Ámbitos — Inicio">
+        <img src="assets/logo.png" alt="Ámbitos S.L.">
+      </a>
+
+      <nav class="header-nav" id="headerNav" aria-label="Navegación principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <a href="tel:+34609659015" class="header-phone" id="headerPhone" aria-label="Llamar al 609 659 015">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        609 659 015
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- ========== HERO — FULL SCREEN LAPTOP ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-img-wrapper">
+      <img src="assets/hero-poster.png" alt="Tecnología Ámbitos" class="hero-img" id="heroImg" loading="eager" fetchpriority="high">
+    </div>
+    <div class="hero-overlay" id="heroOverlay"></div>
+
+    <div class="hero-content" id="heroContent">
+      <p class="hero-scroll-prompt">Desliza para descubrir</p>
+      <div class="scroll-arrow" id="scrollArrow">
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+
+    <!-- Loading spinner — appears during zoom -->
+    <div class="hero-spinner" id="heroSpinner">
+      <div class="spinner-ring"></div>
+    </div>
+
+    <!-- Products appear INSIDE the hero after zoom completes -->
+    <div class="hero-products" id="heroProducts">
+      <div class="container">
+        <div class="products-header">
+          <p class="section-label">Nuestros productos</p>
+          <h2 class="section-title">Encuentra la tecnología que necesitas</h2>
+          <p class="section-subtitle">Asesoramiento experto con la confianza de más de 30 años.</p>
+        </div>
+
+        <div class="products-grid">
+          <a href="productos.html#ordenadores" class="product-card">
+            <span class="card-num">01</span>
+            <div class="corner-accent"></div>
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Ordenadores de sobremesa y portátiles</h3>
+            <p>Equipos para trabajo, gaming, estudio o uso doméstico. Te ayudamos a elegir la configuración perfecta.</p>
+          </a>
+
+          <a href="productos.html#componentes" class="product-card">
+            <span class="card-num">02</span>
+            <div class="corner-accent"></div>
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="15" x2="22" y2="15"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="15" x2="4" y2="15"/></svg>
+            </div>
+            <h3>Componentes y periféricos</h3>
+            <p>Procesadores, tarjetas gráficas, memorias RAM, discos SSD, teclados, ratones, monitores y más.</p>
+          </a>
+
+          <a href="productos.html#red" class="product-card">
+            <span class="card-num">03</span>
+            <div class="corner-accent"></div>
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+            </div>
+            <h3>Dispositivos de red</h3>
+            <p>Routers, switches, puntos de acceso WiFi y todo el equipamiento para una conexión estable.</p>
+          </a>
+
+          <a href="productos.html#accesorios" class="product-card">
+            <span class="card-num">04</span>
+            <div class="corner-accent"></div>
+            <div class="product-icon">
+              <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3>Accesorios y consumibles</h3>
+            <p>Cables, fundas, cargadores, tóner, cartuchos de tinta y material complementario.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- GSAP + ScrollTrigger + Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+
+  <script>
+    // ===== MOBILE MENU =====
+    const menuToggle = document.getElementById('menuToggle');
+    const headerNav = document.getElementById('headerNav');
+    const headerPhone = document.getElementById('headerPhone');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      headerNav.classList.toggle('open');
+      headerPhone.classList.toggle('open');
+    });
+    headerNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        headerNav.classList.remove('open');
+        headerPhone.classList.remove('open');
+      });
+    });
+
+    // ===== GSAP + LENIS ANIMATIONS =====
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof gsap === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      const header = document.getElementById('siteHeader');
+
+      // --- Lenis smooth scroll (desktop only) ---
+      let lenis;
+      if (ScrollTrigger.isTouch !== 1) {
+        lenis = new Lenis({
+          lerp: 0.08,
+          wheelMultiplier: 1.8
+        });
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => lenis.raf(time * 1000));
+        gsap.ticker.lagSmoothing(0);
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) lenis.scrollTo(target, { offset: -70 });
+          });
+        });
+      }
+
+      // --- PHASE 1: Scroll-driven zoom into black ---
+      const heroProducts = document.getElementById('heroProducts');
+      let productsRevealed = false;
+
+      const heroTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#hero',
+          start: 'top top',
+          end: '+=40%',
+          scrub: 1,
+          pin: true,
+          onLeave: () => {
+            // Lock scroll — animation is done
+            document.body.classList.add('scroll-locked');
+            if (lenis) lenis.stop();
+            // Trigger Phase 2 (only once)
+            if (!productsRevealed) {
+              productsRevealed = true;
+              playProductsReveal();
+            }
+          },
+          onEnterBack: () => {
+            // Unlock scroll, hide products, reset
+            document.body.classList.remove('scroll-locked');
+            if (lenis) lenis.start();
+            productsRevealed = false;
+            heroProducts.classList.remove('is-visible');
+            gsap.set('#heroProducts', { opacity: 0 });
+            const spinner = document.getElementById('heroSpinner');
+            spinner.style.display = '';
+            gsap.set(spinner, { opacity: 0 });
+            gsap.set('.products-header .section-label', { clearProps: 'all' });
+            gsap.set('.products-header .section-title', { clearProps: 'all' });
+            gsap.set('.products-header .section-subtitle', { clearProps: 'all' });
+            gsap.set('.product-card', { clearProps: 'all' });
+            header.style.pointerEvents = 'none';
+            gsap.to(header, { opacity: 0, y: -60, duration: 0.3, ease: 'power2.in' });
+          }
+        }
+      });
+
+      // Scroll timeline — ONLY zoom + overlay to black
+      heroTl.to('#heroContent', { opacity: 0, y: -40, duration: 10, ease: 'power1.in' }, 0);
+      heroTl.to('#heroImg', { scale: 6, duration: 45, ease: 'power1.inOut' }, 0);
+      // Spinner fades in mid-zoom, stays until overlay covers it
+      heroTl.to('#heroSpinner', { opacity: 1, duration: 6, ease: 'power1.in' }, 15);
+      heroTl.to('#heroOverlay', { opacity: 1, duration: 8, ease: 'power2.in' }, 37);
+
+      // --- PHASE 2: Auto-playing product reveal (no scroll dependency) ---
+      function playProductsReveal() {
+        heroProducts.classList.add('is-visible');
+        document.getElementById('heroSpinner').style.display = 'none';
+
+        const tl = gsap.timeline({ delay: 0 });
+
+        // Header slides in
+        tl.to(header, {
+          opacity: 1, y: 0, duration: 0.5, ease: 'power3.out',
+          onComplete: () => { header.style.pointerEvents = 'auto'; }
+        }, 0);
+
+        // Products container fades in
+        tl.to('#heroProducts', { opacity: 1, duration: 0.6, ease: 'power2.out' }, 0);
+
+        // Label slides in from left
+        tl.from('.products-header .section-label', {
+          x: -40, opacity: 0, duration: 0.6, ease: 'power3.out'
+        }, 0.2);
+
+        // Title wipes in with clip-path
+        tl.from('.products-header .section-title', {
+          clipPath: 'inset(0 100% 0 0)',
+          duration: 0.8,
+          ease: 'power4.inOut'
+        }, 0.35);
+
+        // Subtitle fades up
+        tl.from('.products-header .section-subtitle', {
+          y: 15, opacity: 0, duration: 0.5, ease: 'power2.out'
+        }, 0.65);
+
+        // Cards — 3D perspective stagger, each from its own direction
+        const cards = gsap.utils.toArray('.product-card');
+        const cardOrigins = [
+          { x: -50, y: 40, rotationY: -6, rotationX: 3 },
+          { x: 50, y: 40, rotationY: 6, rotationX: 3 },
+          { x: -50, y: 40, rotationY: -6, rotationX: -3 },
+          { x: 50, y: 40, rotationY: 6, rotationX: -3 }
+        ];
+
+        cards.forEach((card, i) => {
+          const o = cardOrigins[i];
+          tl.from(card, {
+            x: o.x, y: o.y,
+            rotationY: o.rotationY, rotationX: o.rotationX,
+            opacity: 0, scale: 0.9,
+            duration: 0.7,
+            ease: 'power3.out'
+          }, 0.7 + i * 0.1);
+        });
+      }
+
+      // --- Header scroll style ---
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 60);
+      });
+
+      // --- Interactive card tilt on mousemove ---
+      const cards = gsap.utils.toArray('.product-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          gsap.to(card, {
+            rotationY: x * 10,
+            rotationX: -y * 8,
+            duration: 0.4,
+            ease: 'power2.out',
+            overwrite: 'auto'
+          });
+        });
+        card.addEventListener('mouseleave', () => {
+          gsap.to(card, {
+            rotationY: 0,
+            rotationX: 0,
+            duration: 0.6,
+            ease: 'elastic.out(1, 0.5)',
+            overwrite: 'auto'
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

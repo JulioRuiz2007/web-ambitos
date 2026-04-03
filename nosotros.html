@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros — Ámbitos S.L. | Desde 1995 en Valencia</title>
+  <meta name="description" content="Conoce Ámbitos S.L. — Más de 30 años de experiencia en venta de productos electrónicos, reparación informática y redes en el área metropolitana de Valencia.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="canonical" href="https://ambitos.es/nosotros.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sobre Nosotros — Ámbitos S.L. | Desde 1995 en Valencia">
+  <meta property="og:description" content="Empresa valenciana con más de 30 años de experiencia en venta de productos electrónicos, reparación informática y montaje de redes. Trato personalizado y honesto.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitos.es/nosotros.html">
+  <meta property="og:image" content="https://ambitos.es/assets/logo.png">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Ámbitos S.L.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sobre Nosotros — Ámbitos S.L. | Desde 1995">
+  <meta name="twitter:description" content="Más de 30 años de experiencia en productos electrónicos y soluciones tecnológicas en Valencia. Asesoramiento personalizado.">
+  <meta name="twitter:image" content="https://ambitos.es/assets/logo.png">
+
+  <!-- Datos geográficos (SEO local) -->
+  <meta name="geo.region" content="ES-VC">
+  <meta name="geo.placename" content="Valencia">
+  <meta name="geo.position" content="39.4699;-0.3763">
+  <meta name="ICBM" content="39.4699, -0.3763">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Sobre Nosotros — Ámbitos S.L.",
+    "description": "Ámbitos S.L. es una empresa valenciana con más de 30 años de experiencia en venta de productos electrónicos, reparación informática y montaje de redes.",
+    "url": "https://ambitos.es/nosotros.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Ámbitos S.L.",
+      "foundingDate": "1995",
+      "telephone": "+34609659015",
+      "email": "ambitos@outlook.com",
+      "areaServed": "Área metropolitana de Valencia",
+      "knowsAbout": ["Productos electrónicos", "Reparación informática", "Montaje de redes", "Asesoramiento tecnológico"]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ambitos.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Nosotros", "item": "https://ambitos.es/nosotros.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-bg: #0A0A0A;
+      --color-bg-alt: #111111;
+      --color-surface: #1A1A1A;
+      --color-surface-light: #222222;
+      --color-border: rgba(255,255,255,0.08);
+      --color-border-light: rgba(255,255,255,0.12);
+      --color-text: #F0F0F0;
+      --color-text-muted: rgba(240,240,240,0.5);
+      --color-accent: #FFFFFF;
+      --header-bg-rgb: 10,10,10;
+      --font-main: 'Space Grotesk', sans-serif;
+      --radius: 12px;
+      --radius-lg: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-main); background: var(--color-bg); color: var(--color-text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    ul { list-style: none; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* HEADER */
+    .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 18px 0; background: rgba(var(--header-bg-rgb), 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid transparent; transition: all 0.4s ease; }
+    .site-header.scrolled { padding: 12px 0; background: rgba(var(--header-bg-rgb), 0.95); border-bottom-color: var(--color-border); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; }
+    .header-logo img { height: 32px; width: auto; }
+    .header-nav { display: flex; align-items: center; gap: 36px; }
+    .header-nav a { font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted); transition: color 0.3s ease; letter-spacing: 0.02em; }
+    .header-nav a:hover, .header-nav a.active { color: var(--color-text); }
+    .header-phone { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; color: var(--color-text); transition: opacity 0.3s ease; }
+    .header-phone:hover { opacity: 0.8; }
+    .header-phone svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--color-text); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px; }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* PAGE HERO */
+    .page-hero { position: relative; min-height: 45vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 140px 24px 80px; background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 100%); overflow: hidden; }
+    .page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, var(--color-bg)); pointer-events: none; }
+    .page-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 16px; position: relative; z-index: 1; }
+    .page-hero .breadcrumb { font-size: 0.85rem; color: var(--color-text-muted); position: relative; z-index: 1; }
+    .page-hero .breadcrumb a:hover { color: var(--color-text); }
+
+    /* BUTTONS */
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--color-text); color: var(--color-bg); padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; font-family: var(--font-main); transition: all 0.3s ease; border: none; cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,255,255,0.15); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--color-text); padding: 14px 32px; border-radius: 8px; font-weight: 500; font-size: 0.95rem; font-family: var(--font-main); border: 1px solid var(--color-border-light); transition: all 0.3s ease; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.25); transform: translateY(-2px); }
+    .btn-secondary svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+    /* SECTIONS */
+    section { padding: 100px 0; }
+    .section-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 16px; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 20px; }
+
+    /* ABOUT INTRO */
+    .about-intro {
+      background: var(--color-bg);
+    }
+    .about-intro-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-intro-text p {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .about-intro-text p:first-of-type {
+      color: var(--color-text);
+      font-size: 1.15rem;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .about-stat {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .about-stat .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .about-stat .stat-label {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    /* VALUES */
+    .values-section {
+      background: var(--color-bg-alt);
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .value-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      transition: all 0.4s ease;
+    }
+    .value-card:hover {
+      border-color: var(--color-border-light);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    .value-icon {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px;
+    }
+    .value-icon svg {
+      width: 28px; height: 28px;
+      stroke: var(--color-text); fill: none; stroke-width: 1.5;
+    }
+    .value-card h3 {
+      font-size: 1.15rem; font-weight: 600; margin-bottom: 12px;
+    }
+    .value-card p {
+      font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.7;
+    }
+
+    /* TIMELINE */
+    .timeline-section {
+      background: var(--color-bg);
+    }
+    .timeline {
+      max-width: 700px;
+      margin: 56px auto 0;
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--color-border);
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 40px;
+      padding-bottom: 48px;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-text);
+      border: 3px solid var(--color-bg);
+    }
+    .timeline-year {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 8px;
+    }
+    .timeline-item h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .timeline-item p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta-section { background: var(--color-bg-alt); text-align: center; padding: 100px 0; }
+    .cta-section .section-title { max-width: 600px; margin: 0 auto 12px; }
+    .cta-section p { font-size: 1.05rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 40px; line-height: 1.7; }
+    .cta-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* FOOTER */
+    .site-footer { background: var(--color-surface); border-top: 1px solid var(--color-border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand img { height: 28px; width: auto; margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.7; max-width: 300px; }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 20px; }
+    .footer-col a { display: block; font-size: 0.9rem; color: var(--color-text-muted); padding: 6px 0; transition: color 0.3s ease; }
+    .footer-col a:hover { color: var(--color-text); }
+    .footer-contact-item { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+    .footer-contact-item svg { width: 16px; height: 16px; stroke: var(--color-text-muted); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .footer-contact-item span { font-size: 0.9rem; color: var(--color-text-muted); }
+    .footer-bottom { border-top: 1px solid var(--color-border); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; }
+    .footer-bottom p { font-size: 0.8rem; color: var(--color-text-muted); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .header-nav, .header-phone { display: none; }
+      .menu-toggle { display: block; }
+      .header-nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(var(--header-bg-rgb), 0.98); backdrop-filter: blur(16px); padding: 24px; gap: 16px; border-bottom: 1px solid var(--color-border); }
+      .header-phone.open { display: flex; position: absolute; top: calc(100% + 140px); left: 24px; }
+      .about-intro-inner { grid-template-columns: 1fr; gap: 40px; }
+      .values-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Ámbitos — Inicio">
+        <img src="assets/logo.png" alt="Ámbitos S.L.">
+      </a>
+      <nav class="header-nav" id="headerNav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html" class="active">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="tel:+34609659015" class="header-phone" id="headerPhone" aria-label="Llamar al 609 659 015">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        609 659 015
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div>
+      <h1>Sobre Nosotros</h1>
+      <p class="breadcrumb"><a href="index.html">Inicio</a> / Nosotros</p>
+    </div>
+  </section>
+
+  <!-- ABOUT INTRO -->
+  <section class="about-intro">
+    <div class="container about-intro-inner">
+      <div class="about-intro-text">
+        <p class="section-label">Nuestra historia</p>
+        <h2 class="section-title">Más de 30 años en el sector tecnológico</h2>
+        <p>Ámbitos S.L. nació en 1995 con una idea clara: ofrecer productos electrónicos de calidad con un asesoramiento cercano y honesto.</p>
+        <p>Desde entonces, hemos acompañado a particulares y empresas del área metropolitana de Valencia en todas sus necesidades tecnológicas. Desde elegir el portátil perfecto hasta montar una red empresarial completa.</p>
+        <p>Nuestro punto fuerte siempre ha sido el trato directo. No somos una gran superficie: somos personas que entienden de tecnología y que se toman el tiempo de escuchar lo que realmente necesitas antes de recomendarte nada.</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="stat-number">+30</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="about-stat">
+          <div class="stat-number">1995</div>
+          <div class="stat-label">Año de fundación</div>
+        </div>
+        <div class="about-stat">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Servicios especializados</div>
+        </div>
+        <div class="about-stat">
+          <div class="stat-number">VLC</div>
+          <div class="stat-label">Área metropolitana</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values-section">
+    <div class="container">
+      <p class="section-label">Lo que nos define</p>
+      <h2 class="section-title">Nuestros valores</h2>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Trato personalizado</h3>
+          <p>Cada cliente es diferente. Nos tomamos el tiempo de entender qué necesitas antes de recomendarte ningún producto o servicio.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Honestidad</h3>
+          <p>Te recomendamos lo que realmente necesitas, no lo más caro. Si algo no merece la pena, te lo decimos. Así llevamos 30 años.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Experiencia</h3>
+          <p>Tres décadas en el sector nos han dado el conocimiento para resolver cualquier problema tecnológico de forma eficiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="container">
+      <p class="section-label">Nuestra trayectoria</p>
+      <h2 class="section-title">Hitos clave</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1995</div>
+          <h3>Fundación de Ámbitos S.L.</h3>
+          <p>Nace Ámbitos con el objetivo de acercar la tecnología a particulares y empresas del área metropolitana de Valencia.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2000s</div>
+          <h3>Expansión de servicios</h3>
+          <p>Incorporamos los servicios de reparación y mantenimiento de equipos informáticos y el montaje de redes, convirtiéndonos en un proveedor integral.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <h3>+30 años al servicio de Valencia</h3>
+          <p>Tres décadas después seguimos con la misma filosofía: asesoramiento experto, trato cercano y soluciones tecnológicas de confianza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <p class="section-label">¿Quieres conocernos mejor?</p>
+      <h2 class="section-title">Llámanos y cuéntanos qué necesitas</h2>
+      <p>Sin compromiso, sin letra pequeña. Más de 30 años de experiencia a tu servicio.</p>
+      <div class="cta-buttons">
+        <a href="contacto.html" class="btn-primary">Contactar</a>
+        <a href="tel:+34609659015" class="btn-secondary">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          609 659 015
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Ámbitos S.L.">
+          <p>Empresa valenciana especializada en la venta de productos electrónicos y soluciones tecnológicas. Más de 30 años de experiencia al servicio de particulares y empresas.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="tel:+34609659015" class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>609 659 015</span>
+          </a>
+          <a href="mailto:ambitos@outlook.com" class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>ambitos@outlook.com</span>
+          </a>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Área metropolitana de Valencia</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ámbitos S.L. Todos los derechos reservados.</p>
+        <p>Venta de productos electrónicos en Valencia desde 1995</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+
+  <script>
+    // Header scroll
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 60); });
+
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const headerNav = document.getElementById('headerNav');
+    const headerPhone = document.getElementById('headerPhone');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      headerNav.classList.toggle('open');
+      headerPhone.classList.toggle('open');
+    });
+
+    // GSAP Animations — use 'load' to ensure deferred scripts are ready
+    window.addEventListener('load', () => {
+      if (typeof gsap === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Page hero entrance
+      const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      heroTl
+        .from('.page-hero h1', { opacity: 0, y: 40, duration: 1 })
+        .from('.page-hero .breadcrumb', { opacity: 0, y: 20, duration: 0.6 }, '-=0.5');
+
+      // Scroll reveal utility
+      function revealOnScroll(selector, fromVars) {
+        gsap.utils.toArray(selector).forEach(el => {
+          gsap.from(el, {
+            ...fromVars,
+            scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+          });
+        });
+      }
+
+      // Section labels & titles
+      revealOnScroll('.section-label', { opacity: 0, y: 20, duration: 0.6 });
+      revealOnScroll('.section-title', { opacity: 0, y: 30, duration: 0.8, delay: 0.1 });
+
+      // About intro text
+      revealOnScroll('.about-intro-text p', { opacity: 0, y: 25, duration: 0.7, stagger: 0.15 });
+
+      // Stats — individual ScrollTrigger per element
+      gsap.utils.toArray('.about-stat').forEach((stat, i) => {
+        gsap.fromTo(stat,
+          { opacity: 0, scale: 0.9 },
+          { opacity: 1, scale: 1, duration: 0.7, ease: 'power2.out', delay: i * 0.1,
+            scrollTrigger: { trigger: stat, start: 'top 85%', once: true }
+          }
+        );
+      });
+
+      // Value cards — individual ScrollTrigger per element
+      gsap.utils.toArray('.value-card').forEach((card, i) => {
+        gsap.fromTo(card,
+          { opacity: 0, y: 40 },
+          { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out', delay: i * 0.12,
+            scrollTrigger: { trigger: card, start: 'top 85%', once: true }
+          }
+        );
+      });
+
+      // Timeline items stagger
+      gsap.utils.toArray('.timeline-item').forEach((item, i) => {
+        gsap.fromTo(item,
+          { opacity: 0, x: -30 },
+          { opacity: 1, x: 0, duration: 0.8, ease: 'power2.out', delay: i * 0.15,
+            scrollTrigger: { trigger: item, start: 'top 85%', once: true }
+          }
+        );
+      });
+
+      // CTA
+      revealOnScroll('.cta-buttons', { opacity: 0, y: 30, duration: 0.8 });
+    });
+  </script>
+</body>
+</html>

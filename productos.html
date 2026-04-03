@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos — Ámbitos S.L. | Electrónica en Valencia</title>
+  <meta name="description" content="Catálogo de productos electrónicos de Ámbitos S.L. — Ordenadores, componentes, periféricos, dispositivos de red y accesorios. Asesoramiento experto en Valencia.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="canonical" href="https://ambitos.es/productos.html">
+
+  <meta property="og:title" content="Productos — Ámbitos S.L. | Electrónica en Valencia">
+  <meta property="og:description" content="Catálogo de productos electrónicos: ordenadores, componentes, periféricos, dispositivos de red y accesorios. Asesoramiento personalizado desde 1995.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambitos.es/productos.html">
+  <meta property="og:image" content="https://ambitos.es/assets/logo.png">
+  <meta property="og:locale" content="es_ES">
+
+  <meta name="geo.region" content="ES-VC">
+  <meta name="geo.placename" content="Valencia">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ambitos.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Productos", "item": "https://ambitos.es/productos.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-bg: #0A0A0A;
+      --color-bg-alt: #111111;
+      --color-surface: #1A1A1A;
+      --color-surface-light: #222222;
+      --color-border: rgba(255,255,255,0.08);
+      --color-border-light: rgba(255,255,255,0.12);
+      --color-text: #F0F0F0;
+      --color-text-muted: rgba(240,240,240,0.5);
+      --color-accent: #FFFFFF;
+      --header-bg-rgb: 10,10,10;
+      --font-main: 'Space Grotesk', sans-serif;
+      --radius: 12px;
+      --radius-lg: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-main); background: var(--color-bg); color: var(--color-text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    ul { list-style: none; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* HEADER */
+    .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 18px 0; background: rgba(var(--header-bg-rgb), 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid transparent; transition: all 0.4s ease; }
+    .site-header.scrolled { padding: 12px 0; background: rgba(var(--header-bg-rgb), 0.95); border-bottom-color: var(--color-border); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; }
+    .header-logo img { height: 32px; width: auto; }
+    .header-nav { display: flex; align-items: center; gap: 36px; }
+    .header-nav a { font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted); transition: color 0.3s ease; letter-spacing: 0.02em; }
+    .header-nav a:hover, .header-nav a.active { color: var(--color-text); }
+    .header-phone { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; color: var(--color-text); transition: opacity 0.3s ease; }
+    .header-phone:hover { opacity: 0.8; }
+    .header-phone svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--color-text); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px; }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* PAGE HERO */
+    .page-hero { position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 140px 24px 60px; background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 100%); overflow: hidden; }
+    .page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, var(--color-bg)); pointer-events: none; }
+    .page-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; position: relative; z-index: 1; }
+    .page-hero .hero-desc { font-size: 1.05rem; color: var(--color-text-muted); max-width: 500px; margin: 0 auto 16px; position: relative; z-index: 1; }
+    .page-hero .breadcrumb { font-size: 0.85rem; color: var(--color-text-muted); position: relative; z-index: 1; }
+    .page-hero .breadcrumb a:hover { color: var(--color-text); }
+
+    /* CATEGORY NAV — sticky bar below header */
+    .category-nav {
+      position: sticky;
+      top: 68px;
+      z-index: 900;
+      background: rgba(var(--header-bg-rgb), 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .category-nav::-webkit-scrollbar { display: none; }
+    .category-nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .category-nav a {
+      flex-shrink: 0;
+      padding: 16px 24px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease, box-shadow 0.3s ease;
+      border-bottom: 2px solid transparent;
+    }
+    .category-nav a:hover {
+      color: var(--color-text);
+    }
+    .category-nav a.active {
+      color: var(--color-text);
+      border-bottom-color: var(--color-accent);
+    }
+
+    /* SECTIONS */
+    .category-section {
+      padding: 80px 0;
+      scroll-margin-top: 130px;
+    }
+    .category-section:nth-child(even) {
+      background: var(--color-bg-alt);
+    }
+    .section-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
+    .section-desc { font-size: 0.95rem; color: var(--color-text-muted); max-width: 600px; margin-bottom: 40px; line-height: 1.7; }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    /* PRODUCT CARD */
+    .prod-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .prod-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-border-light);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+
+    .prod-card-img {
+      aspect-ratio: 4/3;
+      background: var(--color-surface-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .prod-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .prod-card-img .img-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--color-text-muted);
+    }
+    .prod-card-img .img-placeholder svg {
+      width: 32px;
+      height: 32px;
+      stroke: rgba(255,255,255,0.2);
+      fill: none;
+      stroke-width: 1.5;
+    }
+    .prod-card-img .img-placeholder span {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.2);
+    }
+
+    .prod-card-body {
+      padding: 20px;
+    }
+    .prod-card-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .prod-card-body p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+    .prod-card-body .prod-tag {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      color: var(--color-text-muted);
+    }
+    .prod-card-body .prod-price {
+      display: block;
+      margin-top: 12px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .cta-section p {
+      color: var(--color-text-muted);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--color-text); color: var(--color-bg); padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; font-family: var(--font-main); transition: all 0.3s ease; border: none; cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,255,255,0.15); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--color-text); padding: 14px 32px; border-radius: 8px; font-weight: 500; font-size: 0.95rem; font-family: var(--font-main); border: 1px solid var(--color-border-light); transition: all 0.3s ease; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.25); transform: translateY(-2px); }
+    .btn-secondary svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+    /* FOOTER */
+    .site-footer { background: var(--color-surface); border-top: 1px solid var(--color-border); padding: 64px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand img { height: 28px; width: auto; margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.7; max-width: 300px; }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 20px; }
+    .footer-col a { display: block; font-size: 0.9rem; color: var(--color-text-muted); padding: 6px 0; transition: color 0.3s ease; }
+    .footer-col a:hover { color: var(--color-text); }
+    .footer-contact-item { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+    .footer-contact-item svg { width: 16px; height: 16px; stroke: var(--color-text-muted); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .footer-contact-item span { font-size: 0.9rem; color: var(--color-text-muted); }
+    .footer-bottom { border-top: 1px solid var(--color-border); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; }
+    .footer-bottom p { font-size: 0.8rem; color: var(--color-text-muted); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .header-nav, .header-phone { display: none; }
+      .menu-toggle { display: block; }
+      .header-nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(var(--header-bg-rgb), 0.98); backdrop-filter: blur(16px); padding: 24px; gap: 16px; border-bottom: 1px solid var(--color-border); }
+      .header-phone.open { display: flex; position: absolute; top: calc(100% + 140px); left: 24px; }
+
+      .category-nav { top: 58px; }
+      .category-nav a { padding: 14px 18px; font-size: 0.8rem; }
+
+      .category-section { padding: 60px 0; }
+      .product-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+      .cta-buttons { flex-direction: column; }
+      .cta-buttons .btn-primary,
+      .cta-buttons .btn-secondary { width: 100%; max-width: 300px; justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    /* ── CART ICON ── */
+    .header-cart {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--color-border);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: var(--font-main);
+    }
+    .header-cart:hover { background: rgba(255,255,255,0.12); border-color: var(--color-border-light); }
+    .header-cart svg { width: 18px; height: 18px; fill: none; stroke: var(--color-text); stroke-width: 2; }
+    .cart-badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      min-width: 19px;
+      height: 19px;
+      padding: 0 5px;
+      background: var(--color-text);
+      color: var(--color-bg);
+      font-size: 0.65rem;
+      font-weight: 700;
+      font-family: var(--font-main);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .cart-badge.visible { opacity: 1; transform: scale(1); }
+
+    /* ── ADD TO CART BUTTON ── */
+    .add-to-cart-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px;
+      margin-top: 16px;
+      background: transparent;
+      color: var(--color-text-muted);
+      border: 1px solid var(--color-border-light);
+      border-radius: 8px;
+      font-family: var(--font-main);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.02em;
+    }
+    .add-to-cart-btn:hover {
+      background: var(--color-text);
+      color: var(--color-bg);
+      border-color: var(--color-text);
+      transform: translateY(-1px);
+    }
+    .add-to-cart-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+    .add-to-cart-btn:disabled { pointer-events: none; }
+
+    /* ── FLY CLONE ── */
+    .fly-clone {
+      position: fixed;
+      z-index: 10000;
+      pointer-events: none;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+
+    /* ── CART OVERLAY ── */
+    .cart-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 9998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .cart-overlay.open { opacity: 1; pointer-events: auto; }
+
+    /* ── CART DRAWER ── */
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(420px, 90vw);
+      background: var(--color-surface);
+      border-left: 1px solid var(--color-border);
+      z-index: 9999;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-drawer.open { transform: translateX(0); }
+    .cart-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .cart-drawer-header h3 { font-size: 1.1rem; font-weight: 700; }
+    .cart-drawer-close {
+      background: none;
+      border: none;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      padding: 4px;
+      transition: color 0.3s ease;
+    }
+    .cart-drawer-close:hover { color: var(--color-text); }
+    .cart-drawer-close svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; }
+    .cart-drawer-body { flex: 1; overflow-y: auto; padding: 16px 24px; }
+    .cart-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 16px;
+      color: var(--color-text-muted);
+    }
+    .cart-empty svg { width: 48px; height: 48px; fill: none; stroke: rgba(255,255,255,0.15); stroke-width: 1.5; }
+    .cart-empty p { font-size: 0.95rem; }
+
+    .cart-item {
+      display: flex;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--color-border);
+      animation: cartItemIn 0.3s ease;
+    }
+    @keyframes cartItemIn {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .cart-item-img {
+      width: 64px;
+      height: 48px;
+      border-radius: 8px;
+      background: var(--color-surface-light);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
+    .cart-item-info { flex: 1; min-width: 0; }
+    .cart-item-info h4 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .cart-item-price { font-size: 0.8rem; color: var(--color-text-muted); }
+    .cart-item-qty {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .cart-item-qty button {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      border: 1px solid var(--color-border-light);
+      background: transparent;
+      color: var(--color-text);
+      font-size: 1rem;
+      font-family: var(--font-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+    .cart-item-qty button:hover { background: rgba(255,255,255,0.1); }
+    .cart-item-qty span { font-size: 0.85rem; font-weight: 600; min-width: 20px; text-align: center; }
+    .cart-item-remove {
+      align-self: flex-start;
+      background: none;
+      border: none;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      padding: 4px;
+      margin-top: 8px;
+      transition: color 0.3s ease;
+      flex-shrink: 0;
+    }
+    .cart-item-remove:hover { color: #ff4444; }
+    .cart-item-remove svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+    .cart-drawer-footer {
+      padding: 20px 24px;
+      border-top: 1px solid var(--color-border);
+    }
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .cart-total span:first-child { font-size: 0.9rem; color: var(--color-text-muted); }
+    .cart-total span:last-child { font-size: 1.2rem; font-weight: 700; }
+    .cart-checkout-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px;
+      background: var(--color-text);
+      color: var(--color-bg);
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font-main);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .cart-checkout-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(255,255,255,0.15);
+      background: #fff;
+    }
+    .cart-checkout-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+    .cart-checkout-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* Checkout loading state */
+    .cart-checkout-btn.loading {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    .cart-checkout-btn.loading::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border: 2px solid transparent;
+      border-top-color: var(--color-bg);
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      margin-left: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* WhatsApp fallback button for items without price */
+    .cart-whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px;
+      background: #25D366;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font-main);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .cart-whatsapp-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.3);
+      background: #20bd5a;
+    }
+    .cart-whatsapp-btn svg { width: 18px; height: 18px; fill: currentColor; stroke: none; }
+    .cart-footer-note {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--color-text-muted);
+      opacity: 0.6;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+    .cart-secure-badges {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 12px;
+      font-size: 0.7rem;
+      color: var(--color-text-muted);
+      opacity: 0.5;
+    }
+    .cart-secure-badges span { display: flex; align-items: center; gap: 4px; }
+    .cart-secure-badges svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+    @media (max-width: 768px) {
+      .header-cart { margin-left: auto; width: 36px; height: 36px; }
+      .menu-toggle { margin-left: 12px; }
+      .cart-drawer { width: 100vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Ámbitos — Inicio">
+        <img src="assets/logo.png" alt="Ámbitos S.L.">
+      </a>
+      <nav class="header-nav" id="headerNav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="active">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="tel:+34609659015" class="header-phone" aria-label="Llamar al 609 659 015">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        609 659 015
+      </a>
+      <button class="header-cart" id="cartIcon" aria-label="Carrito de compra">
+        <svg viewBox="0 0 24 24"><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div>
+      <h1>Nuestros Productos</h1>
+      <p class="hero-desc">Asesoramiento experto para encontrar exactamente lo que necesitas.</p>
+      <p class="breadcrumb"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Productos</p>
+    </div>
+  </section>
+
+  <!-- CATEGORY NAV -->
+  <nav class="category-nav" id="categoryNav">
+    <div class="category-nav-inner">
+      <a href="#ordenadores" class="active">Ordenadores</a>
+      <a href="#componentes">Componentes</a>
+      <a href="#red">Dispositivos de red</a>
+      <a href="#accesorios">Accesorios</a>
+    </div>
+  </nav>
+
+  <!-- ========== ORDENADORES ========== -->
+  <section class="category-section" id="ordenadores">
+    <div class="container">
+      <p class="section-label">Categoría 01</p>
+      <h2 class="section-title">Ordenadores de sobremesa y portátiles</h2>
+      <p class="section-desc">Equipos para trabajo, gaming, estudio o uso doméstico. Te ayudamos a elegir la configuración perfecta según tus necesidades.</p>
+
+      <div class="product-grid">
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Portátil profesional 15.6"</h3>
+            <p>Ideal para trabajo de oficina y productividad. Pantalla Full HD, procesador de última generación y batería de larga duración.</p>
+            <span class="prod-tag">Portátil</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>PC Gaming torre completa</h3>
+            <p>Configuración gaming de alto rendimiento con gráfica dedicada, refrigeración avanzada y almacenamiento SSD rápido.</p>
+            <span class="prod-tag">Sobremesa</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Portátil ultraligero 14"</h3>
+            <p>Diseño compacto y ligero para máxima portabilidad. Perfecto para estudiantes y profesionales en movimiento.</p>
+            <span class="prod-tag">Portátil</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Sobremesa oficina compacto</h3>
+            <p>Equipo de sobremesa compacto para uso doméstico y de oficina. Silencioso, eficiente y fácil de mantener.</p>
+            <span class="prod-tag">Sobremesa</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Portátil gaming 17.3"</h3>
+            <p>Pantalla grande y potencia para gaming en cualquier lugar. Gráfica dedicada de última generación y pantalla de alta frecuencia.</p>
+            <span class="prod-tag">Portátil</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Workstation profesional</h3>
+            <p>Estación de trabajo para diseño gráfico, edición de vídeo y tareas exigentes. Componentes certificados y máxima fiabilidad.</p>
+            <span class="prod-tag">Sobremesa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPONENTES ========== -->
+  <section class="category-section" id="componentes">
+    <div class="container">
+      <p class="section-label">Categoría 02</p>
+      <h2 class="section-title">Componentes y periféricos</h2>
+      <p class="section-desc">Procesadores, tarjetas gráficas, memorias RAM, discos SSD, teclados, ratones, monitores y todo lo que necesitas para montar o mejorar tu equipo.</p>
+
+      <div class="product-grid">
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Procesadores</h3>
+            <p>CPUs de Intel y AMD para todo tipo de uso: desde ofimática hasta gaming y estaciones de trabajo profesionales.</p>
+            <span class="prod-tag">Componente</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Tarjetas gráficas</h3>
+            <p>GPUs de NVIDIA y AMD para gaming, diseño, renderizado y edición de vídeo. Todos los rangos de rendimiento.</p>
+            <span class="prod-tag">Componente</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Memorias RAM</h3>
+            <p>Módulos DDR4 y DDR5 para ampliar o renovar la memoria de tu equipo. Kits optimizados para cada plataforma.</p>
+            <span class="prod-tag">Componente</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Discos SSD y almacenamiento</h3>
+            <p>SSDs NVMe y SATA para máxima velocidad. Discos duros de gran capacidad para almacenamiento masivo.</p>
+            <span class="prod-tag">Componente</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Monitores</h3>
+            <p>Pantallas de todas las medidas y resoluciones. Monitores gaming de alta frecuencia y monitores profesionales con precisión de color.</p>
+            <span class="prod-tag">Periférico</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Teclados y ratones</h3>
+            <p>Periféricos de entrada para gaming y oficina. Teclados mecánicos, inalámbricos, ratones ergonómicos y gaming.</p>
+            <span class="prod-tag">Periférico</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Placas base</h3>
+            <p>Placas base compatibles con las últimas plataformas de Intel y AMD. Desde gama básica hasta entusiasta.</p>
+            <span class="prod-tag">Componente</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Fuentes de alimentación</h3>
+            <p>Fuentes certificadas 80 Plus en todas las potencias. Protección para tu equipo con la máxima eficiencia energética.</p>
+            <span class="prod-tag">Componente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RED ========== -->
+  <section class="category-section" id="red">
+    <div class="container">
+      <p class="section-label">Categoría 03</p>
+      <h2 class="section-title">Dispositivos de red</h2>
+      <p class="section-desc">Routers, switches, puntos de acceso WiFi y todo el equipamiento para una conexión estable en casa o en tu empresa.</p>
+
+      <div class="product-grid">
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Routers WiFi</h3>
+            <p>Routers WiFi 6 y WiFi 6E de alto rendimiento para cobertura total en hogares y oficinas.</p>
+            <span class="prod-tag">Router</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Switches gestionables</h3>
+            <p>Switches Ethernet para redes profesionales. Gestión avanzada de tráfico, VLANs y QoS para empresas.</p>
+            <span class="prod-tag">Switch</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Puntos de acceso WiFi</h3>
+            <p>Access points profesionales para ampliar la cobertura inalámbrica. Ideales para locales comerciales y oficinas grandes.</p>
+            <span class="prod-tag">WiFi</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Sistemas WiFi Mesh</h3>
+            <p>Kits mesh para eliminar zonas sin cobertura. Red unificada en toda la vivienda o local con roaming automático.</p>
+            <span class="prod-tag">WiFi</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Cableado y patch panels</h3>
+            <p>Cable Ethernet Cat5e, Cat6 y Cat6a, patch panels, conectores RJ45 y herramientas de crimpado profesional.</p>
+            <span class="prod-tag">Cableado</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>NAS y almacenamiento en red</h3>
+            <p>Servidores NAS para copias de seguridad, almacenamiento compartido y acceso remoto a tus archivos.</p>
+            <span class="prod-tag">Almacenamiento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACCESORIOS ========== -->
+  <section class="category-section" id="accesorios">
+    <div class="container">
+      <p class="section-label">Categoría 04</p>
+      <h2 class="section-title">Accesorios y consumibles</h2>
+      <p class="section-desc">Cables, fundas, cargadores, tóner, cartuchos de tinta y todo el material complementario para tu equipo.</p>
+
+      <div class="product-grid">
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Cables y adaptadores</h3>
+            <p>HDMI, DisplayPort, USB-C, USB-A, adaptadores y conversores. Todo tipo de conexiones para tus dispositivos.</p>
+            <span class="prod-tag">Cable</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Fundas y mochilas</h3>
+            <p>Protección para portátiles y tablets. Fundas acolchadas, mochilas técnicas y maletines profesionales.</p>
+            <span class="prod-tag">Protección</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Cargadores y baterías externas</h3>
+            <p>Cargadores originales y compatibles, powerbanks de alta capacidad y bases de carga para múltiples dispositivos.</p>
+            <span class="prod-tag">Energía</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Tóner y cartuchos de tinta</h3>
+            <p>Consumibles originales y compatibles para impresoras de todas las marcas. Tóner láser y cartuchos de inyección.</p>
+            <span class="prod-tag">Consumible</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Auriculares y audio</h3>
+            <p>Auriculares gaming, profesionales y de uso diario. Con y sin cable, con cancelación de ruido activa.</p>
+            <span class="prod-tag">Audio</span>
+          </div>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-card-img">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Foto</span>
+            </div>
+          </div>
+          <div class="prod-card-body">
+            <h3>Webcams y micrófonos</h3>
+            <p>Cámaras web HD y Full HD para videollamadas. Micrófonos USB para streaming, podcasting y reuniones.</p>
+            <span class="prod-tag">Periférico</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿No encuentras lo que buscas?</h2>
+      <p>Consúltanos sin compromiso. Te asesoramos para encontrar el producto que mejor se adapta a tus necesidades.</p>
+      <div class="cta-buttons">
+        <a href="contacto.html" class="btn-primary">Solicitar presupuesto</a>
+        <a href="tel:+34609659015" class="btn-secondary">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          609 659 015
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Ámbitos S.L.">
+          <p>Empresa valenciana especializada en la venta de productos electrónicos y soluciones tecnológicas. Más de 30 años de experiencia al servicio de particulares y empresas.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="tel:+34609659015" class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>609 659 015</span>
+          </a>
+          <a href="mailto:ambitos@outlook.com" class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>ambitos@outlook.com</span>
+          </a>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Área metropolitana de Valencia</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ámbitos S.L. Todos los derechos reservados.</p>
+        <p>Venta de productos electrónicos en Valencia desde 1995</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Carrito de compra">
+    <div class="cart-drawer-header">
+      <h3>Tu carrito</h3>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Cerrar carrito">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody"></div>
+    <div class="cart-drawer-footer" id="cartFooter">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">0&euro;</span>
+      </div>
+      <div id="cartActions"></div>
+      <div class="cart-secure-badges">
+        <span><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Pago seguro</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> SSL</span>
+        <span><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Stripe</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+
+  <script>
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const headerNav = document.getElementById('headerNav');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      headerNav.classList.toggle('open');
+    });
+
+    // Header scroll style
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Category nav — highlight active section on scroll
+    const catLinks = document.querySelectorAll('.category-nav a');
+    const sections = document.querySelectorAll('.category-section');
+
+    const observerOpts = {
+      root: null,
+      rootMargin: '-140px 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          catLinks.forEach(link => link.classList.remove('active'));
+          const activeLink = document.querySelector(`.category-nav a[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, observerOpts);
+
+    sections.forEach(section => observer.observe(section));
+
+    // ─── Dynamic Products from Google Sheets ───────────────
+    const GOOGLE_SHEET_ID = '1wZO2aeFDUdPV8QQPEOfS-F7PhjOFq_Ak0CgATP-qUO0';
+
+    function escapeHtml(str) {
+      const d = document.createElement('div');
+      d.textContent = str;
+      return d.innerHTML;
+    }
+
+    const PLACEHOLDER_SVG = '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>';
+
+    function buildCardHTML(product) {
+      const imgBlock = product.imagenUrl
+        ? `<img src="${escapeHtml(product.imagenUrl)}" alt="${escapeHtml(product.nombre)}" loading="lazy">`
+        : `<div class="img-placeholder">${PLACEHOLDER_SVG}<span>Foto</span></div>`;
+
+      return `
+        <div class="prod-card">
+          <div class="prod-card-img">${imgBlock}</div>
+          <div class="prod-card-body">
+            <h3>${escapeHtml(product.nombre)}</h3>
+            <p>${escapeHtml(product.descripcion)}</p>
+            ${product.precio ? `<span class="prod-price">${escapeHtml(product.precio)}</span>` : ''}
+          </div>
+        </div>`;
+    }
+
+    async function loadDynamicProducts() {
+      if (GOOGLE_SHEET_ID === 'TU_GOOGLE_SHEET_ID_AQUI') return; // Not configured yet
+
+      try {
+        const url = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/gviz/tq?tqx=out:json`;
+        const res = await fetch(url);
+        const text = await res.text();
+        const match = text.match(/google\.visualization\.Query\.setResponse\(({.*})\)/s);
+        if (!match) return;
+
+        const data = JSON.parse(match[1]);
+        const rows = data.table.rows || [];
+
+        // Parse rows (skip header — gviz doesn't include it as a row, but cols has labels)
+        const products = rows.map(row => ({
+          categoria: (row.c[1] && row.c[1].v) || '',
+          nombre: (row.c[2] && row.c[2].v) || '',
+          descripcion: (row.c[3] && row.c[3].v) || '',
+          precio: (row.c[4] && row.c[4].v) || '',
+          imagenUrl: (row.c[5] && row.c[5].v) || '',
+        })).filter(p => p.nombre);
+
+        if (products.length === 0) return;
+
+        // Group by category
+        const byCategory = {
+          ordenadores: products.filter(p => p.categoria === 'ordenadores'),
+          componentes: products.filter(p => p.categoria === 'componentes'),
+          red: products.filter(p => p.categoria === 'red'),
+          accesorios: products.filter(p => p.categoria === 'accesorios'),
+        };
+
+        // Replace product grids for categories that have dynamic products
+        Object.entries(byCategory).forEach(([catId, prods]) => {
+          if (prods.length === 0) return; // Keep static cards
+          const section = document.getElementById(catId);
+          if (!section) return;
+          const grid = section.querySelector('.product-grid');
+          if (!grid) return;
+          grid.innerHTML = prods.map(buildCardHTML).join('');
+        });
+      } catch (e) {
+        // Silently fall back to static cards
+        console.log('Productos dinámicos: usando tarjetas estáticas', e.message);
+      }
+    }
+
+    // ─── Shopping Cart ─────────────────────────────────────
+
+    const CART_BTN_HTML = '<button class="add-to-cart-btn"><svg viewBox="0 0 24 24"><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg> Añadir al carrito</button>';
+
+    const cartState = {
+      items: JSON.parse(localStorage.getItem('ambitos-cart') || '[]'),
+
+      save() {
+        localStorage.setItem('ambitos-cart', JSON.stringify(this.items));
+        this.updateBadge();
+        this.renderDrawer();
+      },
+
+      add(product) {
+        const existing = this.items.find(i => i.name === product.name);
+        if (existing) existing.qty++;
+        else this.items.push({ ...product, qty: 1 });
+        this.save();
+      },
+
+      removeAt(idx) {
+        this.items.splice(idx, 1);
+        this.save();
+      },
+
+      updateQtyAt(idx, delta) {
+        if (!this.items[idx]) return;
+        this.items[idx].qty += delta;
+        if (this.items[idx].qty <= 0) this.items.splice(idx, 1);
+        this.save();
+      },
+
+      getTotal() {
+        return this.items.reduce((sum, item) => {
+          const n = parseFloat((item.price || '').replace(/[^0-9.,]/g, '').replace(',', '.'));
+          return sum + (isNaN(n) ? 0 : n * item.qty);
+        }, 0);
+      },
+
+      getCount() {
+        return this.items.reduce((s, i) => s + i.qty, 0);
+      },
+
+      updateBadge() {
+        const badge = document.getElementById('cartBadge');
+        if (!badge) return;
+        const count = this.getCount();
+        badge.textContent = count;
+        badge.classList.toggle('visible', count > 0);
+      },
+
+      renderDrawer() {
+        const body = document.getElementById('cartBody');
+        const footer = document.getElementById('cartFooter');
+        if (!body || !footer) return;
+
+        if (this.items.length === 0) {
+          body.innerHTML = '<div class="cart-empty"><svg viewBox="0 0 24 24"><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg><p>Tu carrito está vacío</p></div>';
+          footer.style.display = 'none';
+          return;
+        }
+
+        footer.style.display = '';
+        body.innerHTML = this.items.map((item, i) =>
+          '<div class="cart-item">' +
+            '<div class="cart-item-img">' + (item.img ? '<img src="' + escapeHtml(item.img) + '" alt="">' : '') + '</div>' +
+            '<div class="cart-item-info">' +
+              '<h4>' + escapeHtml(item.name) + '</h4>' +
+              '<span class="cart-item-price">' + (item.price ? escapeHtml(item.price) : 'Consultar precio') + '</span>' +
+              '<div class="cart-item-qty">' +
+                '<button class="cart-qty-btn" data-action="minus" data-i="' + i + '">−</button>' +
+                '<span>' + item.qty + '</span>' +
+                '<button class="cart-qty-btn" data-action="plus" data-i="' + i + '">+</button>' +
+              '</div>' +
+            '</div>' +
+            '<button class="cart-item-remove" data-i="' + i + '"><svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>' +
+          '</div>'
+        ).join('');
+
+        const total = this.getTotal();
+        const totalEl = document.getElementById('cartTotal');
+        if (totalEl) totalEl.textContent = total > 0 ? total.toFixed(2).replace('.', ',') + '€' : 'Consultar';
+
+        // Render checkout action button
+        const actionsEl = document.getElementById('cartActions');
+        if (actionsEl) {
+          if (allItemsHavePrice()) {
+            actionsEl.innerHTML =
+              '<button class="cart-checkout-btn"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Tramitar pedido</button>' +
+              '<p class="cart-footer-note">Serás redirigido a una página de pago seguro (Stripe)</p>';
+          } else {
+            // Some items have no price — WhatsApp fallback
+            var msg = 'Hola, me gustaría pedir presupuesto para:\n\n';
+            this.items.forEach(function(item) {
+              msg += '• ' + item.qty + 'x ' + item.name;
+              if (item.price) msg += ' (' + item.price + ')';
+              msg += '\n';
+            });
+            if (total > 0) msg += '\nTotal productos con precio: ' + total.toFixed(2).replace('.', ',') + '€';
+            msg += '\n\n¡Gracias!';
+            actionsEl.innerHTML =
+              '<a href="https://wa.me/34609659015?text=' + encodeURIComponent(msg) + '" class="cart-whatsapp-btn" target="_blank" rel="noopener">' +
+                '<svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>' +
+                ' Pedir presupuesto por WhatsApp' +
+              '</a>' +
+              '<p class="cart-footer-note">Algunos productos no tienen precio — contacta para presupuesto</p>';
+          }
+        }
+      }
+    };
+
+    function addCartButtons() {
+      document.querySelectorAll('.prod-card').forEach(card => {
+        if (card.querySelector('.add-to-cart-btn')) return;
+        const body = card.querySelector('.prod-card-body');
+        if (body) body.insertAdjacentHTML('beforeend', CART_BTN_HTML);
+      });
+    }
+
+    function flyToCart(cardEl) {
+      const imgEl = cardEl.querySelector('.prod-card-img');
+      const cartIcon = document.getElementById('cartIcon');
+      if (!imgEl || !cartIcon || typeof gsap === 'undefined') return;
+
+      const imgRect = imgEl.getBoundingClientRect();
+      const cartRect = cartIcon.getBoundingClientRect();
+      const dx = (cartRect.left + cartRect.width / 2) - (imgRect.left + imgRect.width / 2);
+      const dy = (cartRect.top + cartRect.height / 2) - (imgRect.top + imgRect.height / 2);
+
+      const clone = document.createElement('div');
+      clone.className = 'fly-clone';
+      clone.innerHTML = imgEl.innerHTML;
+      clone.style.background = getComputedStyle(imgEl).backgroundColor;
+      document.body.appendChild(clone);
+
+      gsap.set(clone, { left: imgRect.left, top: imgRect.top, width: imgRect.width, height: imgRect.height });
+
+      const tl = gsap.timeline({
+        onComplete() {
+          clone.remove();
+          gsap.fromTo(cartIcon, { scale: 1.4 }, { scale: 1, duration: 0.5, ease: 'elastic.out(1,0.3)' });
+          const badge = document.getElementById('cartBadge');
+          if (badge) gsap.fromTo(badge, { scale: 1.8 }, { scale: 1, duration: 0.4, ease: 'elastic.out(1,0.3)' });
+        }
+      });
+
+      // Phase 1: pop up
+      tl.to(clone, { scale: 1.08, boxShadow: '0 0 30px rgba(255,255,255,0.3)', duration: 0.15, ease: 'power2.out' });
+
+      // Phase 2: fly with curved path (different easings for x/y = parabolic arc)
+      tl.to(clone, { x: dx, duration: 0.65, ease: 'power1.in' }, 'fly');
+      tl.to(clone, { y: dy, duration: 0.65, ease: 'power3.in' }, 'fly');
+      tl.to(clone, { width: 30, height: 30, borderRadius: '50%', opacity: 0.2, rotation: 360, scale: 1, duration: 0.65, ease: 'power2.in' }, 'fly');
+
+      // Flash on original card
+      gsap.fromTo(cardEl,
+        { boxShadow: '0 0 0 rgba(255,255,255,0)' },
+        { boxShadow: '0 0 25px rgba(255,255,255,0.2)', duration: 0.3, yoyo: true, repeat: 1 }
+      );
+    }
+
+    function openCartDrawer() {
+      document.getElementById('cartDrawer').classList.add('open');
+      document.getElementById('cartOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCartDrawer() {
+      document.getElementById('cartDrawer').classList.remove('open');
+      document.getElementById('cartOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ─── Checkout (Stripe) ─────────────────────────────────
+
+    // URL of the backend server (change to your Render URL in production)
+    const API_URL = 'https://ambitos-whatsapp-bot.onrender.com';
+
+    function allItemsHavePrice() {
+      return cartState.items.every(function(item) {
+        var n = parseFloat((item.price || '').replace(/[^0-9.,]/g, '').replace(',', '.'));
+        return !isNaN(n) && n > 0;
+      });
+    }
+
+    async function startCheckout() {
+      var btn = document.querySelector('#cartActions .cart-checkout-btn');
+      if (!btn || btn.disabled) return;
+
+      btn.classList.add('loading');
+      btn.disabled = true;
+      var origText = btn.childNodes[btn.childNodes.length - 1].textContent;
+      btn.childNodes[btn.childNodes.length - 1].textContent = ' Redirigiendo...';
+
+      try {
+        var res = await fetch(API_URL + '/create-checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            items: cartState.items,
+            successUrl: window.location.origin + '/pedido-confirmado.html',
+            cancelUrl: window.location.href,
+          }),
+        });
+
+        var data = await res.json();
+        if (data.url) {
+          // Clear cart before redirect (Stripe handles the rest)
+          cartState.items = [];
+          cartState.save();
+          window.location.href = data.url;
+        } else {
+          throw new Error(data.error || 'Error al crear la sesión de pago');
+        }
+      } catch (err) {
+        console.error('Checkout error:', err);
+        btn.classList.remove('loading');
+        btn.disabled = false;
+        btn.childNodes[btn.childNodes.length - 1].textContent = origText;
+
+        // Shake button on error
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo(btn, { x: -6 }, { x: 0, duration: 0.5, ease: 'elastic.out(1, 0.3)' });
+        }
+      }
+    }
+
+    // Cart event listeners
+    document.getElementById('cartIcon').addEventListener('click', openCartDrawer);
+    document.getElementById('cartClose').addEventListener('click', closeCartDrawer);
+    document.getElementById('cartOverlay').addEventListener('click', closeCartDrawer);
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeCartDrawer(); });
+
+    // Delegate click on dynamic cart actions
+    document.getElementById('cartActions').addEventListener('click', function(e) {
+      if (e.target.closest('.cart-checkout-btn')) startCheckout();
+    });
+
+    // Add-to-cart: event delegation
+    document.querySelector('main').addEventListener('click', function(e) {
+      var btn = e.target.closest('.add-to-cart-btn');
+      if (!btn) return;
+      var card = btn.closest('.prod-card');
+      if (!card) return;
+
+      var name = (card.querySelector('h3') || {}).textContent || '';
+      var price = (card.querySelector('.prod-price') || {}).textContent || '';
+      var imgNode = card.querySelector('.prod-card-img img');
+      var img = imgNode ? imgNode.src : '';
+
+      flyToCart(card);
+      cartState.add({ name: name, price: price, img: img });
+
+      // Button feedback
+      var orig = btn.innerHTML;
+      btn.innerHTML = '<svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2"><polyline points="20 6 9 17 4 12"/></svg> ¡Añadido!';
+      btn.style.background = 'rgba(255,255,255,0.12)';
+      btn.style.color = '#F0F0F0';
+      btn.disabled = true;
+      setTimeout(function() { btn.innerHTML = orig; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; }, 1200);
+    });
+
+    // Cart drawer: event delegation for qty/remove
+    document.getElementById('cartBody').addEventListener('click', function(e) {
+      var qtyBtn = e.target.closest('.cart-qty-btn');
+      var removeBtn = e.target.closest('.cart-item-remove');
+      if (qtyBtn) cartState.updateQtyAt(+qtyBtn.dataset.i, qtyBtn.dataset.action === 'plus' ? 1 : -1);
+      if (removeBtn) cartState.removeAt(+removeBtn.dataset.i);
+    });
+
+    // Init cart state
+    cartState.updateBadge();
+    cartState.renderDrawer();
+
+    // ─── GSAP Animations ──────────────────────────────────
+    window.addEventListener('load', async () => {
+      // Load dynamic products first, then animate
+      await loadDynamicProducts();
+      addCartButtons();
+
+      if (typeof gsap === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // ── Hero entrance ──
+      const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      heroTl
+        .fromTo('.page-hero h1',
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1 }
+        )
+        .fromTo('.page-hero .hero-desc',
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.7 },
+          '-=0.5'
+        )
+        .fromTo('.page-hero .breadcrumb',
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.5 },
+          '-=0.4'
+        );
+
+      // ── Category nav slide down ──
+      gsap.fromTo('.category-nav',
+        { opacity: 0, y: -20 },
+        { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 0.8 }
+      );
+
+      // ── Section labels & titles per category ──
+      gsap.utils.toArray('.category-section').forEach(section => {
+        const label = section.querySelector('.section-label');
+        const title = section.querySelector('.section-title');
+        const desc = section.querySelector('.section-desc');
+
+        if (label) {
+          gsap.fromTo(label,
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out',
+              scrollTrigger: { trigger: section, start: 'top 80%', once: true }
+            }
+          );
+        }
+        if (title) {
+          gsap.fromTo(title,
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out', delay: 0.1,
+              scrollTrigger: { trigger: section, start: 'top 80%', once: true }
+            }
+          );
+        }
+        if (desc) {
+          gsap.fromTo(desc,
+            { opacity: 0, y: 25 },
+            { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 0.2,
+              scrollTrigger: { trigger: section, start: 'top 80%', once: true }
+            }
+          );
+        }
+
+        // ── Product cards stagger per section ──
+        const cards = section.querySelectorAll('.prod-card');
+        cards.forEach((card, i) => {
+          gsap.fromTo(card,
+            { opacity: 0, y: 50, scale: 0.97 },
+            {
+              opacity: 1, y: 0, scale: 1,
+              duration: 0.6,
+              ease: 'power2.out',
+              delay: 0.3 + (i * 0.08),
+              scrollTrigger: { trigger: card, start: 'top 90%', once: true }
+            }
+          );
+        });
+      });
+
+      // ── CTA section ──
+      gsap.fromTo('.cta-section h2',
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out',
+          scrollTrigger: { trigger: '.cta-section', start: 'top 80%', once: true }
+        }
+      );
+      gsap.fromTo('.cta-section p',
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 0.15,
+          scrollTrigger: { trigger: '.cta-section', start: 'top 80%', once: true }
+        }
+      );
+      gsap.fromTo('.cta-buttons',
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out', delay: 0.3,
+          scrollTrigger: { trigger: '.cta-section', start: 'top 80%', once: true }
+        }
+      );
+    });
+  </script>
+
+</body>
+</html>

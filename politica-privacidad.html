@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Ámbitos S.L.</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" type="image/png" href="assets/favicon-ambitos.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --color-bg: #0A0A0A;
+      --color-surface: #1A1A1A;
+      --color-border: rgba(255,255,255,0.08);
+      --color-text: #F0F0F0;
+      --color-text-muted: rgba(240,240,240,0.5);
+      --font-main: 'Space Grotesk', sans-serif;
+    }
+    body { font-family: var(--font-main); background: var(--color-bg); color: var(--color-text); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+
+    .site-header { position: sticky; top: 0; z-index: 1000; padding: 18px 0; background: rgba(10,10,10,0.95); backdrop-filter: blur(16px); border-bottom: 1px solid var(--color-border); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .header-logo img { height: 32px; width: auto; }
+    .header-nav { display: flex; align-items: center; gap: 36px; }
+    .header-nav a { font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted); transition: color 0.3s; }
+    .header-nav a:hover { color: var(--color-text); }
+
+    .legal-content { max-width: 800px; margin: 0 auto; padding: 80px 24px; }
+    .legal-content h1 { font-size: 2rem; font-weight: 700; margin-bottom: 32px; letter-spacing: -0.02em; }
+    .legal-content h2 { font-size: 1.2rem; font-weight: 600; margin: 32px 0 12px; color: var(--color-text); }
+    .legal-content p { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 16px; }
+    .legal-content ul { color: var(--color-text-muted); font-size: 0.9rem; margin: 0 0 16px 24px; }
+    .legal-content li { margin-bottom: 8px; }
+
+    .site-footer { padding: 24px 0; border-top: 1px solid var(--color-border); text-align: center; }
+    .site-footer p { font-size: 0.8rem; color: var(--color-text-muted); }
+
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--color-text); margin: 5px 0; transition: all 0.3s; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .header-nav { display: none; }
+      .menu-toggle { display: block; }
+      .header-nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,10,0.98); padding: 24px; gap: 16px; border-bottom: 1px solid var(--color-border); }
+      .legal-content { padding: 40px 20px; }
+      .legal-content h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo.png" alt="Ámbitos S.L."></a>
+      <nav class="header-nav">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="legal-content">
+    <h1>Política de Privacidad</h1>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <ul>
+      <li><strong>Responsable:</strong> Ámbitos S.L.</li>
+      <li><strong>CIF:</strong> B96649835</li>
+      <li><strong>Dirección:</strong> Área metropolitana de Valencia, España</li>
+      <li><strong>Email de contacto:</strong> ambitos@outlook.com</li>
+      <li><strong>Teléfono:</strong> 609 659 015</li>
+    </ul>
+
+    <h2>2. Datos personales que recopilamos</h2>
+    <p>A través del formulario de contacto de este sitio web, podemos recopilar los siguientes datos personales:</p>
+    <ul>
+      <li>Nombre y apellidos</li>
+      <li>Dirección de correo electrónico</li>
+      <li>Número de teléfono</li>
+      <li>Mensaje o consulta</li>
+    </ul>
+    <p>En caso de realizar una compra a través de nuestra tienda online, también se recogen:</p>
+    <ul>
+      <li>Dirección de envío</li>
+      <li>Datos de pago (gestionados de forma segura por Stripe, sin que Ámbitos S.L. tenga acceso a los datos completos de la tarjeta)</li>
+    </ul>
+
+    <h2>3. Finalidad del tratamiento</h2>
+    <ul>
+      <li>Gestionar las consultas y solicitudes recibidas a través del formulario de contacto</li>
+      <li>Procesar los pedidos realizados a través de la tienda online</li>
+      <li>Enviar notificaciones relacionadas con el estado de los pedidos</li>
+    </ul>
+
+    <h2>4. Base legal</h2>
+    <p>El tratamiento de los datos se basa en el consentimiento del interesado, otorgado al enviar el formulario de contacto o realizar una compra. En el caso de los pedidos, la base legal es la ejecución de un contrato.</p>
+
+    <h2>5. Destinatarios de los datos</h2>
+    <p>Los datos personales podrán ser comunicados a los siguientes terceros, exclusivamente para las finalidades indicadas:</p>
+    <ul>
+      <li><strong>Stripe:</strong> procesamiento seguro de pagos con tarjeta</li>
+      <li><strong>Twilio:</strong> envío de notificaciones de pedidos por WhatsApp</li>
+    </ul>
+    <p>No se cederán datos a terceros con fines comerciales.</p>
+
+    <h2>6. Plazo de conservación</h2>
+    <p>Los datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad para la que fueron recogidos, y durante los plazos legalmente establecidos para atender posibles responsabilidades.</p>
+
+    <h2>7. Derechos del usuario</h2>
+    <p>El usuario tiene derecho a:</p>
+    <ul>
+      <li><strong>Acceso:</strong> conocer qué datos personales se están tratando</li>
+      <li><strong>Rectificación:</strong> solicitar la corrección de datos inexactos</li>
+      <li><strong>Supresión:</strong> solicitar la eliminación de los datos</li>
+      <li><strong>Limitación:</strong> solicitar la limitación del tratamiento</li>
+      <li><strong>Portabilidad:</strong> recibir los datos en formato electrónico</li>
+      <li><strong>Oposición:</strong> oponerse al tratamiento de los datos</li>
+    </ul>
+    <p>Para ejercer estos derechos, envía un email a <strong>ambitos@outlook.com</strong> indicando tu solicitud y adjuntando copia de tu documento de identidad.</p>
+    <p>También puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener" style="color:#4A9FE5;text-decoration:underline">www.aepd.es</a>.</p>
+
+    <h2>8. Seguridad</h2>
+    <p>Ámbitos S.L. adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Ámbitos S.L. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.menu-toggle'),n=document.querySelector('.header-nav');
+    t.addEventListener('click',()=>{n.classList.toggle('open');t.classList.toggle('active')});
+  </script>
+</body>
+</html>
